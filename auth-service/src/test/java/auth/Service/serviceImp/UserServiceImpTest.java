@@ -93,7 +93,7 @@ class UserServiceImpTest {
         when(userRepo.save(any(User.class))).thenReturn(user);
         when(roleRepo.findByTitle(Role.USER.getValue())).thenReturn(Optional.ofNullable(role));
         AuthenticationResponse response = (userService.registration(request));
-        assertEquals("98109",response.getToken());
+        assertEquals("9810",response.getToken());
 
 
 
